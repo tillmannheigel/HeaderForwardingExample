@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import de.tillmannheigel.HeaderForwardingExample.components.HeadersByRequest;
+
 @RestController
 public class Approach2Controller {
 
@@ -13,6 +15,6 @@ public class Approach2Controller {
 
     @RequestMapping("/approach_2")
     public String example() {
-        return "Approach 2:<br>" + headersByRequest.getHeaders("x-custom");
+        return "Approach 2:<br>" + headersByRequest.printHeaders("x-custom");
     }
 }
