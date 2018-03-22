@@ -40,8 +40,7 @@ public class HeadersByRequest {
         while (headerNames.hasMoreElements()) {
             String header = headerNames.nextElement();
             if (header.startsWith(prefix)) {
-                Pair<String, String> headerKV = new Pair<>(header, request.getHeader(header));
-                headers.add(headerKV);
+                headers.add(new Pair<>(header, request.getHeader(header)));
             }
         }
         return headers;

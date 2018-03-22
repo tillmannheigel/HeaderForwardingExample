@@ -1,4 +1,4 @@
-package de.tillmannheigel.HeaderForwardingExample.Approach_1.Controller;
+package de.tillmannheigel.HeaderForwardingExample.Approach_1;
 
 import java.util.Enumeration;
 
